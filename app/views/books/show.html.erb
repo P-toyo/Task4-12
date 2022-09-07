@@ -1,17 +1,16 @@
 <body>
-  <div>
+  <p class="notice">
+    <%= flash[:notice] %>
+  </p>
+  <p>
     <b>Title:</b>
-    <%= "#{@books.title}" %>
-  </div>
-  <div>
+    <%= @books.title %>
+  </p>
+  <p>
     <b>Body:</b>
-    <%= "#{@books.body}" %>
-  </div>
-  <div>
-    <span>Edit</span>
-    <span>|</span>
-    <span>
-      <%= link_to("Back","/books") %>
-    </span>
-  </div>
+    <%= @books.body %>
+  </p>
+  <%= link_to("Edit","#{@books.id}/edit") %>
+  <a>|</a>
+  <%= link_to("Back","/books/new") %>
 </body>
