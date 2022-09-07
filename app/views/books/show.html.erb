@@ -1,0 +1,17 @@
+<body>
+  <div>
+    <b>Title:</b>
+    <%= "#{@books.title}" %>
+  </div>
+  <div>
+    <b>Body:</b>
+    <%= "#{@books.body}" %>
+  </div>
+  <div>
+    <span>Edit</span>
+    <span>|</span>
+    <span>
+      <%= link_to("Back","/books") %>
+    </span>
+  </div>
+</body>
